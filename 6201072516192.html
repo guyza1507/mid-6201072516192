@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html> 
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Device page</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class = "container">
+        <div id="foo">
+        <img src="IMG_4115.jpg">
+        </div>
+        <form> 
+            <div id="get">
+                <h1> Query data </h1>
+                <h4>
+                <b>Sensor_type:</b><br> <input type = "text" placeholder="Sensor-type" id="sensor_type"><br><br>
+                <b>Sensor_id:</b><br> <input type = "text" placeholder="Sensor-id" id="sensor_id"><br><br>
+                <input type="submit" value="confirm"><br></h4>
+                <div id="show">
+                    <b>
+                        <h3>
+                            <div id = "result"></div>
+                        </h3>
+                        <div id = "result2"></div>
+                    </b>
+                </div><br>
+            </div>
+
+            </form>
+        <form action="https://midterm-exam-010723313-2022.herokuapp.com/student_post" method="post">
+            <div id="post">
+                <h1> Post data </h1>
+                <h4>
+                <b>st_id:</b><br> <input type = "text" placeholder="st-id" name="st_id"><br><br>
+                <b>st_name:</b><br> <input type = "text" placeholder="st-name" name="st_name"><br><br>
+                <b>Sensor_name:</b><br> <input type = "text" placeholder="Sensor-name" name="sensor_name"><br><br>
+                <b>Sensor_type:</b><br> <input type = "text" placeholder="Sensor-type" name="sensor_type"><br><br>
+                <b>Sensor_unit:</b><br> <input type = "text" placeholder="Sensor-unit" name="sensor_unit"><br><br>
+                <b>Sensor_value:</b><br> <input type = "text" placeholder="Sensor-Value" name="sensor_value"><br><br>
+                <input type = "submit" value = "Create"></h4>
+            </div>
+        </form>
+        <script src="script.js"></script>
+    </body>
+</html>
